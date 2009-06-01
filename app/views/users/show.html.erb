@@ -1,0 +1,24 @@
+<p>
+  <b>Nome:</b>
+  <%=h @user.name %>
+</p>
+
+<p>
+  <b>E-mail:</b>
+  <%=h @user.email %>
+</p>
+
+<p>
+  <b>Login:</b>
+  <%=h @user.login %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%=h @user.password %>
+</p>
+
+
+<%= link_to 'Editar', edit_user_path(@user) %> |
+<%= link_to 'Voltar', users_path %>
+

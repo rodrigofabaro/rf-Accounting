@@ -1,0 +1,10 @@
+<h1>Novo Usuário</h1>
+
+<% form_for(@user) do |f| %>
+
+  <%= render :partial => "form", :locals => {:f => f, :button_label => "Criar"} %>
+
+<% end %>
+
+<%= link_to 'Voltar', users_path %>
+

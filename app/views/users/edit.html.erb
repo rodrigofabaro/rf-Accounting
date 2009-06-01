@@ -1,0 +1,8 @@
+<h1>Editar um Usuário</h1>
+
+<% form_for(@user) do |f| %>
+
+  <%= render :partial => "form", :locals => {:f => f, :button_label => "Alterar"} %>
+
+<% end %>
+
