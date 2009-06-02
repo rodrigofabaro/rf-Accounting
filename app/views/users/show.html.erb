@@ -1,3 +1,8 @@
+
+<% if flash[:notice] %>
+<p style="color: green"><%= flash[:notice] %></p>
+<% end %>
+
 <p>
   <b>Nome:</b>
   <%=h @user.name %>
