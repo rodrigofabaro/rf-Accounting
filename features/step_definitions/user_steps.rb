@@ -18,4 +18,13 @@ Then /^I should see the following users:$/ do |users|
     end
   end
 end
+Then /^I should have (\d+) users$/ do |count|
+  User.count.should == count.to_i
+end
+
+Given /^I have users called (.+)$/ do |names|
+  names.split(", ") do |name|
+    User.create!(:name => name, :login => name, :email => "#{name}@test.com", :password => "Pass")
+  end
+end
 
