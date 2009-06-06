@@ -5,15 +5,13 @@
   <tr>
     <th>Nome</th>
     <th>E-mail</th>
-
-
   </tr>
 
-<% @users.each do |user| %>
+
+  <% @users.each do |user| %>
   <tr>
     <td><%=h user.name %></td>
     <td><%=h user.email %></td>
-
     <td><%= link_to 'Mostrar', user %> </td>
     <td><%= link_to 'Editar', edit_user_path(user) %> </td>
     <td><%= link_to 'Apagar', user, :confirm => 'Você tem certeza que deseja apagar o usuário ?', :method => :delete %></td>
