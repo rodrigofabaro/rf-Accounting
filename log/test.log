@@ -1,0 +1,934 @@
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mUser Columns (0.0ms)[0m   [0mMysql::Error: Table 'rf_accounting_test.users' doesn't exist: SHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:18:15) [GET]
+  [4;35;1mUser Columns (0.0ms)[0m   [0mMysql::Error: Table 'rf_accounting_test.users' doesn't exist: SHOW FIELDS FROM `users`[0m
+
+
+Processing ApplicationController#new (for 127.0.0.1 at 2009-06-06 17:18:15) [GET]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mUser Columns (0.0ms)[0m   [0;1mMysql::Error: Table 'rf_accounting_test.users' doesn't exist: SHOW FIELDS FROM `users`[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:19:20) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (6.7ms)
+Completed in 49ms (View: 39, DB: 3) | 200 OK [http://www.example.com/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:19:21', '2009-06-06 20:19:21', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:19:21', '2009-06-06 20:19:21', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (12.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:19:21', '2009-06-06 20:19:21', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:19:21', '2009-06-06 20:19:21', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:19:21) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 11ms (View: 8, DB: 17) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (4.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:20:39) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (6.8ms)
+Completed in 20ms (View: 12, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:20:39) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:20:39', '2009-06-06 20:20:39', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/5
+Completed in 30ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/5 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:20:39) [GET]
+  Parameters: {"id"=>"5"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 5) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/5]
+  [4;36;1mSQL (9.8ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:20:39', '2009-06-06 20:20:39', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:20:39', '2009-06-06 20:20:39', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:20:39', '2009-06-06 20:20:39', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:20:39', '2009-06-06 20:20:39', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:20:39) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 15ms (View: 11, DB: 16) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (24.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:21:06) [GET]
+  [4;35;1mUser Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (7.7ms)
+Completed in 21ms (View: 13, DB: 26) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:21:07) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (1.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:21:07', '2009-06-06 20:21:07', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/10
+Completed in 29ms (DB: 2) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/10 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:21:07) [GET]
+  Parameters: {"id"=>"10"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 10) [0m
+Rendering users/show
+Completed in 7ms (View: 4, DB: 0) | 200 OK [http://www.example.com/users/10]
+  [4;36;1mSQL (10.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:21:07', '2009-06-06 20:21:07', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:21:07', '2009-06-06 20:21:07', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:21:07', '2009-06-06 20:21:07', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:21:07', '2009-06-06 20:21:07', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:21:07) [GET]
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 16ms (View: 13, DB: 14) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/13 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:21:07) [DELETE]
+  Parameters: {"id"=>"13"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 13) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Destroy (0.4ms)[0m   [0mDELETE FROM `users` WHERE `id` = 13[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/users/13]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/13"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:21:07) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 10ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+  [4;35;1mUser Columns (1.8ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (6.7ms)
+Completed in 22ms (View: 13, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:26:01) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.7ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:26:01', '2009-06-06 20:26:01', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/15
+Completed in 27ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/15 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+  Parameters: {"id"=>"15"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 15) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/users/15]
+  [4;36;1mSQL (10.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+Rendering users/new
+Rendered users/_form (2.7ms)
+Completed in 7ms (View: 5, DB: 10) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:26:01) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:26:01', '2009-06-06 20:26:01', '', '', '')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/16
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/16 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+  Parameters: {"id"=>"16"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 16) [0m
+Rendering users/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/16]
+  [4;36;1mSQL (7.0ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:26:01', '2009-06-06 20:26:01', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:26:01', '2009-06-06 20:26:01', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:26:01', '2009-06-06 20:26:01', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:26:01', '2009-06-06 20:26:01', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 12ms (View: 9, DB: 11) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/19 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:26:01) [DELETE]
+  Parameters: {"id"=>"19"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 19) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Destroy (0.5ms)[0m   [0mDELETE FROM `users` WHERE `id` = 19[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users/19]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/19"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:26:01) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (12.6ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (6.6ms)
+Completed in 20ms (View: 13, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:27:39) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:27:39', '2009-06-06 20:27:39', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/21
+Completed in 26ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/21 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+  Parameters: {"id"=>"21"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 21) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/21]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (9.3ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+Rendering users/new
+Rendered users/_form (3.0ms)
+Completed in 26ms (View: 24, DB: 10) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:27:39) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:27:39', '2009-06-06 20:27:39', '', '', '')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/22
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/22 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+  Parameters: {"id"=>"22"}
+  [4;36;1mUser Load (0.6ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 22) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/users/22]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:27:39', '2009-06-06 20:27:39', 'login 1', 'password 1', 'email 1')[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:27:39', '2009-06-06 20:27:39', 'login 2', 'password 2', 'email 2')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.6ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:27:39', '2009-06-06 20:27:39', 'login 3', 'password 3', 'email 3')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:27:39', '2009-06-06 20:27:39', 'login 4', 'password 4', 'email 4')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 13ms (View: 10, DB: 5) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/25 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:27:39) [DELETE]
+  Parameters: {"id"=>"25"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 25) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Destroy (0.4ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 25[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users/25]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/25"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:27:39) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 11ms (View: 8, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:39:32) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (8.6ms)
+Completed in 24ms (View: 16, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:39:32) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:39:32', '2009-06-06 20:39:32', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/27
+Completed in 27ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/27 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+  Parameters: {"id"=>"27"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 27) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/27]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (10.6ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+Rendering users/new
+Rendered users/_form (2.4ms)
+Completed in 7ms (View: 5, DB: 11) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:39:33) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:39:33', '2009-06-06 20:39:33', '', '', '')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/28
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/28 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+  Parameters: {"id"=>"28"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 28) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 1) | 200 OK [http://www.example.com/users/28]
+  [4;35;1mSQL (1.0ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+Rendering users/new
+Rendered users/_form (2.9ms)
+Completed in 7ms (View: 5, DB: 2) | 200 OK [http://www.example.com/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:39:33', '2009-06-06 20:39:33', 'login 1', 'password 1', 'email 1')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:39:33', '2009-06-06 20:39:33', 'login 2', 'password 2', 'email 2')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:39:33', '2009-06-06 20:39:33', 'login 3', 'password 3', 'email 3')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:39:33', '2009-06-06 20:39:33', 'login 4', 'password 4', 'email 4')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 132ms (View: 129, DB: 4) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/31 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:39:33) [DELETE]
+  Parameters: {"id"=>"31"}
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 31) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Destroy (0.4ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 31[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 5ms (DB: 1) | 302 Found [http://www.example.com/users/31]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/31"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:39:33) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 9ms (View: 7, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+  [4;35;1mUser Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (7.0ms)
+Completed in 22ms (View: 13, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:42:24) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:42:24', '2009-06-06 20:42:24', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/33
+Completed in 28ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/33 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+  Parameters: {"id"=>"33"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 33) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/33]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (5.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+Rendering users/new
+Rendered users/_form (6.2ms)
+Completed in 10ms (View: 8, DB: 6) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:42:24) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.5ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:42:24', '2009-06-06 20:42:24', '', '', '')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/34
+Completed in 7ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/34 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+  Parameters: {"id"=>"34"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 34) [0m
+Rendering users/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/34]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+Rendering users/new
+Rendered users/_form (2.6ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://www.example.com/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+Rendering users/new
+Rendered users/_form (3.0ms)
+Completed in 13ms (View: 11, DB: 0) | 200 OK [http://www.example.com/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:42:24', '2009-06-06 20:42:24', 'login 1', 'password 1', 'email 1')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:42:24', '2009-06-06 20:42:24', 'login 2', 'password 2', 'email 2')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:42:24', '2009-06-06 20:42:24', 'login 3', 'password 3', 'email 3')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:42:24', '2009-06-06 20:42:24', 'login 4', 'password 4', 'email 4')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 12ms (View: 9, DB: 4) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/37 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:42:24) [DELETE]
+  Parameters: {"id"=>"37"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 37) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Destroy (0.5ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 37[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users/37]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/37"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:42:24) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (1.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+  [4;35;1mUser Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (8.9ms)
+Completed in 28ms (View: 16, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:45:52) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:45:52', '2009-06-06 20:45:52', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/39
+Completed in 31ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/39 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+  Parameters: {"id"=>"39"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 39) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/39]
+  [4;36;1mSQL (10.4ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+Rendering users/new
+Rendered users/_form (2.4ms)
+Completed in 6ms (View: 5, DB: 11) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:45:52) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:45:52', '2009-06-06 20:45:52', '', '', '')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/40
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/40 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+  Parameters: {"id"=>"40"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 40) [0m
+Rendering users/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/users/40]
+  [4;36;1mSQL (11.1ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+Rendering users/new
+Rendered users/_form (3.0ms)
+Completed in 8ms (View: 6, DB: 11) | 200 OK [http://www.example.com/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+Rendering users/new
+Rendered users/_form (3.8ms)
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users/new]
+  [4;36;1mSQL (0.3ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:45:52', '2009-06-06 20:45:52', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:45:52', '2009-06-06 20:45:52', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:45:52', '2009-06-06 20:45:52', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:45:52', '2009-06-06 20:45:52', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 13ms (View: 10, DB: 4) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/43 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:45:52) [DELETE]
+  Parameters: {"id"=>"43"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 43) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Destroy (0.4ms)[0m   [0mDELETE FROM `users` WHERE `id` = 43[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/users/43]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/43"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:45:52) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 11ms (View: 7, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.9ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:46:24) [GET]
+  [4;35;1mUser Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (7.7ms)
+Completed in 24ms (View: 15, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:46:24) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:46:24', '2009-06-06 20:46:24', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/45
+Completed in 28ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/45 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:46:24) [GET]
+  Parameters: {"id"=>"45"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 45) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/45]
+  [4;36;1mSQL (3.9ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+Rendering users/new
+Rendered users/_form (2.4ms)
+Completed in 6ms (View: 5, DB: 4) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:46:27) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;36;1mSQL (0.3ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.6ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:46:27', '2009-06-06 20:46:27', '', '', '')[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/46
+Completed in 9ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/46 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+  Parameters: {"id"=>"46"}
+  [4;35;1mUser Load (0.6ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 46) [0m
+Rendering users/show
+Completed in 6ms (View: 2, DB: 1) | 200 OK [http://www.example.com/users/46]
+  [4;36;1mSQL (0.7ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+Rendering users/new
+Rendered users/_form (2.9ms)
+Completed in 7ms (View: 6, DB: 1) | 200 OK [http://www.example.com/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+Rendering users/new
+Rendered users/_form (3.0ms)
+Completed in 8ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users/new]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mROLLBACK[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:46:27', '2009-06-06 20:46:27', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:46:27', '2009-06-06 20:46:27', 'login 2', 'password 2', 'email 2')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:46:27', '2009-06-06 20:46:27', 'login 3', 'password 3', 'email 3')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.3ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:46:27', '2009-06-06 20:46:27', 'login 4', 'password 4', 'email 4')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+  [4;36;1mUser Load (0.4ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 12ms (View: 9, DB: 4) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/49 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:46:27) [DELETE]
+  Parameters: {"id"=>"49"}
+  [4;35;1mUser Load (0.5ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 49) [0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Destroy (0.5ms)[0m   [0mDELETE FROM `users` WHERE `id` = 49[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users/49]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/49"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:46:27) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;36;1mSQL (0.8ms)[0m   [0;1mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:47:23) [GET]
+  [4;35;1mUser Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+Rendering users/new
+Rendered users/_form (8.3ms)
+Completed in 23ms (View: 15, DB: 2) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"name 1", "password"=>"password 1", "login"=>"login 1", "email"=>"email 1"}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:47:23) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"name 1", "login"=>"login 1", "password"=>"password 1", "email"=>"email 1"}}
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.5ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:47:23', '2009-06-06 20:47:23', 'login 1', 'password 1', 'email 1')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/51
+Completed in 28ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/51 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+  Parameters: {"id"=>"51"}
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 51) [0m
+Rendering users/show
+Completed in 6ms (View: 3, DB: 0) | 200 OK [http://www.example.com/users/51]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSELECT count(*) AS count_all FROM `users` [0m
+  [4;35;1mSQL (4.8ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+Rendering users/new
+Rendered users/_form (2.4ms)
+Completed in 6ms (View: 4, DB: 5) | 200 OK [http://www.example.com/users/new]
+REQUESTING PAGE: POST /users with {"commit"=>"Criar", "user"=>{"name"=>"", "password"=>"", "login"=>"", "email"=>""}} and HTTP headers {"HTTP_REFERER"=>"/users/new"}
+
+
+Processing UsersController#create (for 127.0.0.1 at 2009-06-06 17:47:24) [POST]
+  Parameters: {"commit"=>"Criar", "user"=>{"name"=>"", "login"=>"", "password"=>"", "email"=>""}}
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.6ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('', '2009-06-06 20:47:24', '2009-06-06 20:47:24', '', '', '')[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users/52
+Completed in 8ms (DB: 1) | 302 Found [http://www.example.com/users]
+REQUESTING PAGE: GET http://www.example.com/users/52 with {} and HTTP headers {"HTTP_REFERER"=>"/users"}
+
+
+Processing UsersController#show (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+  Parameters: {"id"=>"52"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 52) [0m
+Rendering users/show
+Completed in 5ms (View: 2, DB: 0) | 200 OK [http://www.example.com/users/52]
+  [4;35;1mSQL (0.7ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+Rendering users/new
+Rendered users/_form (2.7ms)
+Completed in 7ms (View: 5, DB: 1) | 200 OK [http://www.example.com/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.3ms)[0m   [0;1mBEGIN[0m
+REQUESTING PAGE: GET /users/new with {} and HTTP headers {}
+
+
+Processing UsersController#new (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+Rendering users/new
+Rendered users/_form (2.7ms)
+Completed in 8ms (View: 6, DB: 1) | 200 OK [http://www.example.com/users/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 1', '2009-06-06 20:47:24', '2009-06-06 20:47:24', 'login 1', 'password 1', 'email 1')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 2', '2009-06-06 20:47:24', '2009-06-06 20:47:24', 'login 2', 'password 2', 'email 2')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Create (0.4ms)[0m   [0;1mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 3', '2009-06-06 20:47:24', '2009-06-06 20:47:24', 'login 3', 'password 3', 'email 3')[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSAVEPOINT active_record_1[0m
+  [4;35;1mUser Create (0.4ms)[0m   [0mINSERT INTO `users` (`name`, `created_at`, `updated_at`, `login`, `password`, `email`) VALUES('name 4', '2009-06-06 20:47:24', '2009-06-06 20:47:24', 'login 4', 'password 4', 'email 4')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mRELEASE SAVEPOINT active_record_1[0m
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+  [4;35;1mUser Load (0.4ms)[0m   [0mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 12ms (View: 9, DB: 4) | 200 OK [http://www.example.com/users]
+REQUESTING PAGE: DELETE /users/55 with {} and HTTP headers {"HTTP_REFERER"=>"http://www.example.com/users"}
+
+
+Processing UsersController#destroy (for 127.0.0.1 at 2009-06-06 17:47:24) [DELETE]
+  Parameters: {"id"=>"55"}
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 55) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSAVEPOINT active_record_1[0m
+  [4;36;1mUser Destroy (0.5ms)[0m   [0;1mDELETE FROM `users` WHERE `id` = 55[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://www.example.com/users
+Completed in 6ms (DB: 1) | 302 Found [http://www.example.com/users/55]
+REQUESTING PAGE: GET http://www.example.com/users with {} and HTTP headers {"HTTP_REFERER"=>"/users/55"}
+
+
+Processing UsersController#index (for 127.0.0.1 at 2009-06-06 17:47:24) [GET]
+  [4;36;1mUser Load (0.5ms)[0m   [0;1mSELECT * FROM `users` [0m
+Rendering users/index
+Completed in 9ms (View: 6, DB: 0) | 200 OK [http://www.example.com/users]
+  [4;35;1mSQL (0.8ms)[0m   [0mROLLBACK[0m
