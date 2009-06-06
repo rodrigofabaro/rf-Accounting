@@ -15,6 +15,20 @@ Feature: Manage users
     And I should see "email 1"
     And I should see "login 1"
     And I should see "password 1"
+		And I should have 1 users
+	
+	Scenario: Don't register new user
+    Given I am on the new user page
+    When I fill in "Name" with ""
+    And I fill in "Email" with ""
+    And I fill in "Login" with ""
+    And I fill in "Password" with ""
+    And I press "Criar"
+    Then I should see "Name can't be blank"
+    And I should see "Email can't be blank"
+    And I should see "Login can't be blank"
+    And I should see "Password can't be blank"
+		And I should have 0 users
 
   Scenario: Delete user
     Given the following users:
